@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Management Club Form</title>
+  <style>
+    body {
+      background-image: url("./Whitebackground.jpeg");
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .container h1 {
+      margin-top: 0;
+    }
+
+    .container p {
+      margin-bottom: 20px;
+    }
+
+    .container label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    .container input,
+    .container select,
+    .container textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .container textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Event Management Club Registration</h1>
+  
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <br>
+
+      <label for="event-type">Event Type:</label>
+      <select id="event-type" name="event-type" required>
+        <option value="">- Select Event Type -</option>
+        <option value="conference">Conference</option>
+        <option value="workshop">Workshop</option>
+        <option value="seminar">Seminar</option>
+      </select>
+
+      <br>
+
+      <label for="event-date">Event Date:</label>
+      <input type="date" id="event-date" name="event-date" required>
+
+      <br>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
